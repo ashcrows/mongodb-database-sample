@@ -82,7 +82,7 @@ public class MongoDBAssignment07 {
 
     public MongoDatabase connect() {
         try {
-            String uri = "mongodb+srv://g24ai1067:WHS9UBshA2HO0tT8@clusterassignment.l3zpqum.mongodb.net/?retryWrites=true&w=majority&appName=Clusterassignment";
+            String uri = "mongodb+srv://<username>:<passw>@<cluster-name>.l3zpqum.mongodb.net/?retryWrites=true&w=majority&appName=<cluster-name>";
             mongoClient = MongoClients.create(uri);
             db = mongoClient.getDatabase(DATABASE_NAME);
         } catch (Exception ex) {
